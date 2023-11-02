@@ -1,0 +1,131 @@
+.bg {
+    width: 100vw;
+    height: 90vh;
+    background-image: url(../assets/bg.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+    flex-wrap: wrap;
+    flex-direction: column; /* Added to stack the content vertically */
+    
+}
+
+.bg img {
+    height: 300px;
+    width: auto;
+  
+}
+
+
+
+.linked {
+  color: rgb(189, 189, 189);
+  font-size: 1.8rem;
+  padding: 8px;
+}
+
+.links {
+
+margin: 0 auto;
+width: 130px;
+position: absolute;
+bottom: 47px;
+left: 0;
+right: 0;
+
+}
+
+.lgdiv {
+  height: min-content;
+  width: min-content;
+  position: relative;
+
+ 
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+  }
+  
+  .box {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+  }
+  
+  .box > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  h1, h5 {
+    color: white;
+    margin: 0;
+  }
+  
+
+
+/* Media quesries */
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+    .bg {
+        height: 80vh;
+     
+    }
+
+    .bg img {
+        height: 150px;
+        width: auto;
+      
+    }
+
+    .box {
+        flex-direction: column;
+      }
+
+    .linked {
+      color: rgb(189, 189, 189);
+      font-size: 1.2rem;
+      padding: 5px;
+    }
+
+    .links {
+    display: flex;
+    position: absolute;
+    bottom: 145px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .links {
+
+      margin: 0 auto;
+      width: 83px;
+      position: absolute;
+      bottom: 26px;
+      left: 0;
+      right: 0;
+      
+      }
+  }
+
+ 
